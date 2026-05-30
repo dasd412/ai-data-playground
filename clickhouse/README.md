@@ -30,7 +30,7 @@ docker compose -f infra/clickhouse/docker-compose.yml down -v
 - [x] 1단계: Docker 기동 + 접속 확인 (HTTP 8123 / 네이티브 9000)
 - [x] 2단계: 행 vs 컬럼 저장 차이 눈으로 확인 (압축률·읽기량 실측 → notes/04)
 - [x] 3단계: MergeTree 엔진 — 블록 스킵(notes/05), ORDER BY 설계(notes/06), 파트·병합(notes/07)
-- [ ] 4단계: 웹 접속 로그 적재
+- [x] 4단계: 웹 접속 로그 스키마 설계·적재 (web_logs 5M행, seed_web_logs.sql) → notes/08
 - [ ] 5단계: 분석 쿼리 (집계·시간버킷)
 - [ ] 6단계: Materialized View
 - [ ] 7단계: Python(clickhouse-connect) 적재·쿼리
