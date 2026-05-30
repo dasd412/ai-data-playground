@@ -3,6 +3,7 @@
 ClickHouse 학습 노트 및 실습 코드.
 
 - 공식 문서: https://clickhouse.com/docs
+- 📓 개념 정리: [notes/](./notes/)
 
 ## 로컬 기동 / 종료
 
