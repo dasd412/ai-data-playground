@@ -9,3 +9,5 @@
 | 03 | [왜 빠른가](./03-index-and-partitioning.md) | 카디널리티·희소 인덱스·블록 스킵·파티션 프루닝 | ✅ |
 | 04 | [실측: 컬럼 지향·압축](./04-columnar-measured.md) | 1천만 행으로 컬럼별 저장/압축/읽기량 측정 | ✅ 실측 |
 | 05 | [소비자 관점: 쿼리 비용](./05-consumer-query-cost.md) | 블록 스킵 실측, 정렬키 아닌 쿼리, SELECT * 안티패턴 | ✅ 실측 |
+| 06 | [ORDER BY 설계](./06-order-by-design.md) | 복합키 leftmost prefix, 전체 컬럼 키의 비용 | ✅ |
+| 07 | [파트와 병합](./07-parts-and-merges.md) | INSERT=새 파트, 백그라운드 병합, 파트명 해독, 과파티셔닝 함정 | ✅ |
