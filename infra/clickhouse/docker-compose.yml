@@ -1,0 +1,23 @@
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: ch-playground
+    environment:
+      # 학습용 전용 유저. (운영이라면 비밀번호는 절대 평문/리포에 두지 않음)
+      CLICKHOUSE_USER: playground
+      CLICKHOUSE_PASSWORD: playground
+      # 이 유저가 다른 유저 생성·권한 부여(GRANT) 등을 할 수 있게 허용
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
+    ports:
+      - "8123:8123"   # HTTP 인터페이스 (REST / clickhouse-connect 파이썬 클라이언트가 사용)
+      - "9000:9000"   # 네이티브 TCP 프로토콜 (clickhouse-client CLI가 사용)
+    ulimits:
+      # ClickHouse는 많은 파일을 동시에 여므로 공식 문서가 권장하는 설정
+      nofile:
+        soft: 262144
+        hard: 262144
+    volumes:
+      - ch_data:/var/lib/clickhouse   # 데이터 영속화 (컨테이너 지워도 데이터 유지)
+
+volumes:
+  ch_data:
