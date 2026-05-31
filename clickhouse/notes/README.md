@@ -12,3 +12,4 @@
 | 06 | [ORDER BY 설계](./06-order-by-design.md) | 복합키 leftmost prefix, 전체 컬럼 키의 비용 | ✅ |
 | 07 | [파트와 병합](./07-parts-and-merges.md) | INSERT=새 파트, 백그라운드 병합, 파트명 해독, 과파티셔닝 함정 | ✅ |
 | 08 | [웹 로그 스키마 설계·검증](./08-weblog-schema-and-verify.md) | 직접 설계한 web_logs + 목표 쿼리 EXPLAIN 검증 (B 트레이드오프 실증) | ✅ 실측 |
+| 09 | [분석 쿼리](./09-analytical-queries.md) | 시간버킷·countIf·분위수, 카디널리티별 GROUP BY 메모리(압축≠그룹메모리) | ✅ 실측 |
