@@ -14,3 +14,4 @@
 | 08 | [웹 로그 스키마 설계·검증](./08-weblog-schema-and-verify.md) | 직접 설계한 web_logs + 목표 쿼리 EXPLAIN 검증 (B 트레이드오프 실증) | ✅ 실측 |
 | 09 | [분석 쿼리](./09-analytical-queries.md) | 시간버킷·countIf·분위수, 카디널리티별 GROUP BY 메모리(압축≠그룹메모리) | ✅ 실측 |
 | 10 | [Materialized View](./10-materialized-view.md) | 적재 시 자동 사전집계, SummingMergeTree, 라이브 트리거 실증 | ✅ 실측 |
+| 11 | [Python 클라이언트](./11-python-client.md) | clickhouse-connect 접속·파라미터 바인딩·배치 적재 | ✅ 실측 |
