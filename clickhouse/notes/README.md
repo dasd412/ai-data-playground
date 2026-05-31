@@ -15,3 +15,4 @@
 | 09 | [분석 쿼리](./09-analytical-queries.md) | 시간버킷·countIf·분위수, 카디널리티별 GROUP BY 메모리(압축≠그룹메모리) | ✅ 실측 |
 | 10 | [Materialized View](./10-materialized-view.md) | 적재 시 자동 사전집계, SummingMergeTree, 라이브 트리거 실증 | ✅ 실측 |
 | 11 | [Python 클라이언트](./11-python-client.md) | clickhouse-connect 접속·파라미터 바인딩·배치 적재 | ✅ 실측 |
+| 12 | [실무 요약집 (치트시트)](./12-cheatsheet.md) | 소비자/백엔드 한 장 레퍼런스 (전체 요약) | ⭐ |
