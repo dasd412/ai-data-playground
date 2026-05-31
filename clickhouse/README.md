@@ -32,7 +32,7 @@ docker compose -f infra/clickhouse/docker-compose.yml down -v
 - [x] 3단계: MergeTree 엔진 — 블록 스킵(notes/05), ORDER BY 설계(notes/06), 파트·병합(notes/07)
 - [x] 4단계: 웹 접속 로그 스키마 설계·적재 (web_logs 5M행, seed_web_logs.sql) → notes/08
 - [x] 5단계: 분석 쿼리 (시간버킷·countIf·분위수, 카디널리티별 GROUP BY 메모리 실측) → notes/09
-- [ ] 6단계: Materialized View (적재 시 자동 사전집계)
+- [x] 6단계: Materialized View (적재 시 자동 사전집계, SummingMergeTree) → notes/10
 - [ ] 7단계: Python(clickhouse-connect) 적재·쿼리 — 백엔드에서 소비
 
 ### 후보 (선택, 원래 동기와 직결)
